@@ -1,4 +1,11 @@
 """
+LeetCode [34]: Find First and Last Position of Element in Sorted Array
+
+Given an array of integers 'nums' sorted in ascending order, find the starting and ending position of a given 'target' value. 
+If 'target' is not found in the array, return '[-1, -1]'.
+
+You must write an algorithm with O(log n) runtime complexity.
+
 Approach:
 1. Initialize 'low' and 'high' pointers to -1, indicating the initial range of the target.
 2. Perform a binary search to find the index of the target in the array.
@@ -56,4 +63,4 @@ class Solution:
             else:
                 left = mid + 1
         
-        return -1 
+        return -1
